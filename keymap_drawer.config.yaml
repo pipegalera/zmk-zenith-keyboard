@@ -1,0 +1,301 @@
+draw_config:
+  n_columns: 1
+  draw_key_sides: true
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 28.0
+  combo_h: 26.0
+  key_rx: 6.0
+  key_ry: 6.0
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 40.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: true
+  small_pad: 2.0
+  svg_extra_style: |
+    svg.keymap {
+      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+      font-size: 12px;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+    }
+
+    rect.held, rect.combo.held {
+        fill: #ffc;
+    }
+
+    .sym_sub_text.tap {
+      translate: -5px 2px;
+      font-size: 20px;
+    }
+    .sym_sub_text.shifted {
+      translate: 10px 13px;
+      font-size: 10px;
+      opacity: 1.0;
+    }
+
+  shrink_wide_legends: 6
+  glyph_tap_size: 18
+  glyph_hold_size: 15
+  glyph_shifted_size: 15
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
+
+parse_config:
+  mark_alternate_layer_activators: true
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  raw_binding_map:
+    # Layer tap bindings
+    "&lt 1 F":
+      tap: 'F'
+      hold: 'SYM'
+    "&lt 2 RET":
+      tap: $$mdi:keyboard-return$$
+      hold: 'NUM'
+
+    # Tap dance: Shift / Caps Lock
+    "&td0":
+      tap: $$mdi:apple-keyboard-shift$$
+      shifted: $$mdi:apple-keyboard-caps$$
+
+    # Bluetooth
+    "&bt BT_CLR_ALL":
+      tap: $$mdi:bluetooth-off$$
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 1
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 3
+
+    # Reset
+    "&sys_reset":
+      type: bootloader
+      tap: $$mdi:backup-restore$$
+    "&bootloader":
+      tap: $$mdi:progress-download$$
+
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL:
+      tap: "="
+      shifted: "+"
+    PLUS: +
+    MINUS:
+      tap: "-"
+      shifted: "_"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      tap: "/"
+      shifted: "?"
+    FSLH:
+      tap: "/"
+      shifted: "?"
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH:
+      tap: '\'
+      shifted: "|"
+    BSLH:
+      tap: '\'
+      shifted: "|"
+    PIPE: "|"
+    SEMICOLON:
+      tap: ";"
+      shifted: ":"
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    COLON: ":"
+    SINGLE_QUOTE:
+      tap: "'"
+      shifted: '"'
+    SQT:
+      tap: "'"
+      shifted: '"'
+    APOSTROPHE:
+      tap: "'"
+      shifted: '"'
+    APOS:
+      tap: "'"
+      shifted: '"'
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    LESS_THAN: <
+    LT: <
+    PERIOD: '.'
+    DOT:
+      tap: "."
+      shifted: ">"
+    COMMA:
+      tap: ","
+      shifted: "<"
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET:
+      tap: "["
+      shifted: "{"
+    LBKT:
+      tap: "["
+      shifted: "{"
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET:
+      tap: "]"
+      shifted: "}"
+    RBKT:
+      tap: "]"
+      shifted: "}"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE:
+      tap: "`"
+      shifted: "~"
+    TILDE: "~"
+
+    # Numbers
+    N1:
+      tap: 1
+      shifted: "!"
+    N2:
+      tap: 2
+      shifted: "@"
+    N3:
+      tap: 3
+      shifted: "#"
+    N4:
+      tap: 4
+      shifted: "$"
+    N5:
+      tap: 5
+      shifted: "%"
+    N6:
+      tap: 6
+      shifted: "^"
+    N7:
+      tap: 7
+      shifted: "&"
+    N8:
+      tap: 8
+      shifted: "*"
+    N9:
+      tap: 9
+      shifted: "("
+    N0:
+      tap: 0
+      shifted: ")"
+
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+    PAGE_UP:
+      tap: 'PgUp'
+    PAGE_DOWN:
+      tap: 'PgDn'
+
+    # Arrows
+    UP: $$mdi:arrow-up-bold$$
+    UP_ARROW: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    DOWN_ARROW: $$mdi:arrow-down-bold$$
+    LEFT_ARROW: $$mdi:arrow-left-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    RIGHT_ARROW: $$mdi:arrow-right-bold$$
+
+    # Whitespace / special
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    RET:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    ESCAPE: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # Media
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+
+    # Navigation
+    HOME: $$mdi:home$$
+    END: $$mdi:chevron-right-box$$
+
+    # Bluetooth
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_CLR_ALL: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
