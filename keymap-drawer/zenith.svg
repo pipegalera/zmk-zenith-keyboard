@@ -424,13 +424,13 @@ rect.held, rect.combo.held {
 <g transform="translate(485, 270) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
+<text x="0" y="24" class="key hold">NUM</text>
 </g>
 <g transform="translate(545, 245) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
-<text x="0" y="24" class="key hold">NUM</text>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-command"/>
 </g>
 <g transform="translate(611, 236)" class="key keypos-41">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key side"/>
