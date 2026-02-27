@@ -36,10 +36,10 @@ label= "SYM"                               ;
         symbols_layer {
  bindings = <
 
-&trans       &trans    &trans    &trans    &trans    &trans       &kp AT_SIGN    &kp LBKT       &kp DOUBLE_QUOTES  &kp RBKT        &kp AMPS       &kp DOLLAR
-&trans       &trans    &trans    &trans    &trans    &trans       &kp HASH       &kp LPAR       &kp SQT            &kp RPAR        &kp CARET      &kp GRAVE
-&trans       &trans    &trans    &trans    &trans    &trans       &kp EXCL       &kp LBRC       &kp STAR           &kp RBRC        &kp BSLH       &kp PRCNT
-                                 &trans    &trans    &trans       &trans         &trans         &trans
+&trans   &kp C_PREV &kp C_PP  &kp C_NEXT  &trans    &trans       &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &kp AMPS    &kp DOLLAR
+&trans   &trans     &trans    &trans      &trans    &trans       &kp HASH       &kp LPAR    &kp SQT            &kp RPAR    &kp CARET   &kp GRAVE
+&trans   &trans     &trans    &trans      &trans    &trans       &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &kp BSLH    &kp PRCNT
+                              &trans      &trans    &trans       &trans         &trans      &trans
             >;
         };
 
@@ -49,10 +49,10 @@ label= "NUM"                               ;
 
         numbers_layer {
  bindings = <
-&kp ESC   &kp ESC   &kp N1    &kp N2    &kp N3       &trans          &trans       &trans     &kp UP         &trans          &trans    &bt BT_CLR_ALL
-&trans    &trans    &kp N4    &kp N5    &kp N6       &kp N0          &kp HOME     &kp LEFT   &kp DOWN       &kp RIGHT       &kp END   &trans
-&trans    &trans    &kp N7    &kp N8    &kp N9       &trans          &trans       &trans     &trans         &trans          &trans    &trans
-                              &trans    &bt BT_SEL 2 &bt BT_SEL 3    &bt BT_SEL 0 &trans     &bt BT_SEL 1
+&kp ESC   &kp ESC   &kp N1    &kp N2    &kp N3       &trans          &trans     &trans     &kp UP    &trans    &trans    &bt BT_CLR_ALL
+&trans    &trans    &kp N4    &kp N5    &kp N6       &kp N0          &kp HOME   &kp LEFT   &kp DOWN  &kp RIGHT &kp END   &bt BT_SEL 1
+&trans    &trans    &kp N7    &kp N8    &kp N9       &trans          &trans     &trans     &trans    &trans    &trans    &bt BT_SEL 2
+                              &trans    &trans       &trans          &trans     &trans     &bt BT_SEL 0
             >;
         };
     };
