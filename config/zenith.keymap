@@ -22,7 +22,7 @@ label= "BASE"                              ;
 
         default_layer {
  bindings = <
-&kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T           &kp Y     &kp U     &kp I      &kp O     &kp P      &kp DELETE
+&kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T           &kp Y     &kp U     &kp I      &kp O     &kp P      &kp EQUAL
 &kp LCTRL &kp A     &kp S     &kp D     &lt 1 F   &kp G           &kp H     &kp J     &kp K      &kp L     &kp SEMI   &kp MINUS
 &td0      &kp Z     &kp X     &kp C     &kp V     &kp B           &kp N     &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
                               &kp LALT  &kp BSPC  &kp SPACE       &lt 2 RET &kp RGUI &kp RCTRL
@@ -39,7 +39,7 @@ label= "SYM"                               ;
 &trans   &kp C_PREV &kp C_PP  &kp C_NEXT  &trans    &trans       &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &kp AMPS    &kp DOLLAR
 &trans   &trans     &trans    &trans      &trans    &trans       &kp HASH       &kp LPAR    &kp SQT            &kp RPAR    &kp CARET   &kp GRAVE
 &trans   &trans     &trans    &trans      &trans    &trans       &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &kp BSLH    &kp PRCNT
-                              &trans      &trans    &trans       &trans         &trans      &trans
+                              &trans      &kp DEL   &kp LGUI     &trans         &trans      &trans
             >;
         };
 
