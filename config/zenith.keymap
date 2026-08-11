@@ -36,10 +36,10 @@ label= "SYM"                               ;
         symbols_layer {
  bindings = <
 
-&trans   &trans    &trans    &trans    &trans    &trans           &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &kp AMPS    &kp DOLLAR
-&trans   &trans    &trans    &trans    &trans    &trans           &kp HASH       &kp LPAR    &kp SQT            &kp RPAR    &kp CARET   &kp GRAVE
-&trans   &trans    &trans    &trans    &trans    &trans           &trans         &kp EXCL    &kp LBRC           &kp STAR    &kp RBRC    &kp BSLH    &kp PRCNT
-                             &trans    &kp DEL   &kp LGUI         &trans         &trans      &trans
+&trans   &kp GRAVE    &kp DOLLAR    &kp PRCNT    &trans    &trans           &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &trans    &trans
+&trans   &kp TILDE    &kp CARET     &kp AMPS     &trans    &trans           &kp HASH       &kp LPAR    &kp SINGLE_QUOTE   &kp RPAR    &kp KP_SLASH    &kp BACKSLASH
+&trans   &trans       &kp PIPE      &trans       &trans    &trans           &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &trans
+                                    &trans       &kp DEL   &kp LGUI         &trans         &trans      &trans
             >;
         };
 
@@ -63,10 +63,10 @@ label= "XTR"                               ;
         extra_layer {
  bindings = <
 
-&trans   &trans     &kp F1    &kp F2    &kp F3    &trans           &trans    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    BT_CLR    &bt BT_CLR_ALL
-&trans   &trans     &kp F4    &kp F5    &kp F6    &kp F10          &trans    &kp CC_PREV     &kp CC_PLAY     &kp CC_NEXT     &trans    &trans
-&trans   &trans     &kp F7    &kp F8    &kp F9    &trans           &trans    &trans          &trans          &trans          &trans    &trans
-                              &trans    &trans    &trans           &trans    &trans          &trans
+&trans   &trans     &kp F1    &kp F2    &kp F3    &trans           &trans    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_CLR    &bt BT_CLR_ALL
+&trans   &trans     &kp F4    &kp F5    &kp F6    &kp F10          &trans    &kp C_PREV     &kp C_PLAY     &kp C_NEXT     &trans        &trans
+&trans   &trans     &kp F7    &kp F8    &kp F9    &trans           &trans    &trans         &trans         &trans         &trans        &trans
+                              &trans    &trans    &trans           &trans    &trans         &trans
             >;
         };
 
