@@ -25,7 +25,7 @@ label= "BASE"                              ;
 &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T           &kp Y     &kp U     &kp I      &kp O     &kp P      &kp EQUAL
 &kp LCTRL &kp A     &kp S     &kp D     &lt 1 F   &kp G           &kp H     &kp J     &kp K      &kp L     &kp SEMI   &kp MINUS
 &td0      &kp Z     &kp X     &kp C     &kp V     &kp B           &kp N     &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-                              &kp LALT  &kp BSPC  &kp SPACE       &lt 2 RET &kp RGUI &kp RCTRL
+                              &kp LALT  &kp BSPC  &kp SPACE       &lt 2 RET &kp RGUI &lt 3 ESC
             >;
         };
 
@@ -36,10 +36,10 @@ label= "SYM"                               ;
         symbols_layer {
  bindings = <
 
-&trans   &kp C_PREV &kp C_PP  &kp C_NEXT  &trans    &trans       &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &kp AMPS    &kp DOLLAR
-&trans   &trans     &trans    &trans      &trans    &trans       &kp HASH       &kp LPAR    &kp SQT            &kp RPAR    &kp CARET   &kp GRAVE
-&trans   &trans     &trans    &trans      &trans    &trans       &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &kp BSLH    &kp PRCNT
-                              &trans      &kp DEL   &kp LGUI     &trans         &trans      &trans
+&trans   &trans    &trans    &trans    &trans    &trans           &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &kp AMPS    &kp DOLLAR
+&trans   &trans    &trans    &trans    &trans    &trans           &kp HASH       &kp LPAR    &kp SQT            &kp RPAR    &kp CARET   &kp GRAVE
+&trans   &trans    &trans    &trans    &trans    &trans           &trans         &kp EXCL    &kp LBRC           &kp STAR    &kp RBRC    &kp BSLH    &kp PRCNT
+                             &trans    &kp DEL   &kp LGUI         &trans         &trans      &trans
             >;
         };
 
@@ -49,11 +49,26 @@ label= "NUM"                               ;
 
         numbers_layer {
  bindings = <
-&kp ESC   &kp ESC   &kp N1    &kp N2    &kp N3       &trans          &trans     &trans     &kp UP    &trans    &trans    &bt BT_CLR_ALL
-&trans    &trans    &kp N4    &kp N5    &kp N6       &kp N0          &kp HOME   &kp LEFT   &kp DOWN  &kp RIGHT &kp END   &bt BT_SEL 1
-&trans    &trans    &kp N7    &kp N8    &kp N9       &trans          &trans     &trans     &trans    &trans    &trans    &bt BT_SEL 2
-                              &trans    &trans       &trans          &trans     &trans     &bt BT_SEL 0
+&kp ESC   &kp ESC   &kp N1    &kp N2    &kp N3       &trans          &trans     &trans     &kp UP    &trans    &trans    &trans
+&trans    &trans    &kp N4    &kp N5    &kp N6       &kp N0          &kp HOME   &kp LEFT   &kp DOWN  &kp RIGHT &kp END   &trans
+&trans    &trans    &kp N7    &kp N8    &kp N9       &trans          &trans     &trans     &trans    &trans    &trans    &trans
+                              &trans    &trans       &trans          &trans     &trans     &trans
             >;
         };
+
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "XTR"                               ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+        extra_layer {
+ bindings = <
+
+&trans   &trans     &kp F1    &kp F2    &kp F3    &trans           &trans    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    BT_CLR    &bt BT_CLR_ALL
+&trans   &trans     &kp F4    &kp F5    &kp F6    &kp F10          &trans    &kp CC_PREV     &kp CC_PLAY     &kp CC_NEXT     &trans    &trans
+&trans   &trans     &kp F7    &kp F8    &kp F9    &trans           &trans    &trans          &trans          &trans          &trans    &trans
+                              &trans    &trans    &trans           &trans    &trans          &trans
+            >;
+        };
+
     };
 };
