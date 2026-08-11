@@ -2,7 +2,7 @@
 
 ZMK firmware configuration for the Zenith.
 
-<img src="images/zenith_keyboard.png" alt="Zenith Keyboard" width="300" height="200">
+<img src="images/zenith_keyboard.png" alt="Zenith Keyboard" width="600" height="300">
 
 Zenith is cool 6 columns version of the the TOTEM split keyboard, designed by the people at [ergo mech shop](https://ergomech.store/)
 
