@@ -17,10 +17,11 @@
         compatible = "zmk,keymap";
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "BASE"                              ;
+// ┃                  BASE                 ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
         default_layer {
+            display-name = "BASE";
  bindings = <
 &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T           &kp Y     &kp U     &kp I      &kp O     &kp P      &kp EQUAL
 &kp LCTRL &kp A     &kp S     &kp D     &lt 1 F   &kp G           &kp H     &kp J     &kp K      &kp L     &kp SEMI   &kp MINUS
@@ -30,24 +31,26 @@ label= "BASE"                              ;
         };
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "SYM"                               ;
+// ┃                  SYM                  ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
         symbols_layer {
+            display-name = "SYM";
  bindings = <
 
 &trans   &kp GRAVE    &kp DOLLAR    &kp PRCNT    &trans    &trans           &kp AT_SIGN    &kp LBKT    &kp DOUBLE_QUOTES  &kp RBKT    &trans    &trans
 &trans   &kp TILDE    &kp CARET     &kp AMPS     &trans    &trans           &kp HASH       &kp LPAR    &kp SINGLE_QUOTE   &kp RPAR    &kp KP_SLASH    &kp BACKSLASH
-&trans   &trans       &kp PIPE      &trans       &trans    &trans           &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &trans
+&trans   &trans       &kp PIPE      &trans       &trans    &trans           &kp EXCL       &kp LBRC    &kp STAR           &kp RBRC    &trans    &trans
                                     &trans       &kp DEL   &kp LGUI         &trans         &trans      &trans
             >;
         };
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NUM"                               ;
+// ┃                  NUM                  ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
         numbers_layer {
+            display-name = "NUM";
  bindings = <
 &kp ESC   &kp ESC   &kp N1    &kp N2    &kp N3       &trans          &trans     &trans     &kp UP    &trans    &trans    &trans
 &trans    &trans    &kp N4    &kp N5    &kp N6       &kp N0          &kp HOME   &kp LEFT   &kp DOWN  &kp RIGHT &kp END   &trans
@@ -57,10 +60,11 @@ label= "NUM"                               ;
         };
 
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "XTR"                               ;
+// ┃                  XTR                  ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
         extra_layer {
+            display-name = "XTR";
  bindings = <
 
 &trans   &trans     &kp F1    &kp F2    &kp F3    &trans           &trans    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_CLR    &bt BT_CLR_ALL
