@@ -1,10 +1,8 @@
 # Zenith Keyboard
 
-ZMK firmware configuration for the Zenith.
-
 <table>
   <tr>
-    <td><img src="images/zenith_keyboard.png" alt="Zenith Keyboard" width="350" height="200"></td>
+    <td><img src="images/zenith_keyboard.png" alt="Zenith Keyboard"></td>
     <td>
       <p>Zenith is cool 6 columns version of the the TOTEM split keyboard, designed by the people at <a href="https://ergomech.store/">ergo mech shop</a></p>
       <p>The controllers are the Seeeduino XIAO BLE (<code>nRF52840</code>). I had no trouble pairing the halves with MacOS M series, Windows 11, and Arch Linux.</p>
