@@ -23,8 +23,6 @@
 | **NUM**  | Hold `Enter` | Numbers and navigation                                       |
 | **XTR**  | Hold `ESC`   | Extra layer with function keys, media and bluetooth controls |
 
-[Why this activation setup?](https://gist.github.com/pipegalera/96ebbe37e71e2c9030cf3b9d0725b4fb)
-
 ## Connecting the keyboard
 
 1. Trigger the `.github/workflows/build.yml` workflow automatically by pushing a change to the `main` branch.
